@@ -1,0 +1,272 @@
+*{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Media Query */
+@media (max-width:768px){
+    :root{
+        font-size: 11px;
+    }
+}
+
+
+/* Navbar */
+.bg-light{
+    background-color: #2c3e50 !important;
+}
+#mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    font-weight: 700;
+}
+#mainNav .navbar-brand {
+    font-size: 1.75em;
+    transition: font-size 0.3s;
+    color: white;
+}
+.nav-item .nav-link {
+    color: #fff !important;
+    font-size: 1rem;
+}
+.nav-item{
+    padding: 0 1rem;
+}
+.nav-item:hover .nav-link{
+    color: #1abc9c !important;
+}
+.nav-link.active{
+    color: #1abc9c !important;
+}
+.navbar-toggler , .navbar-toggler:focus{
+    color: white;
+    font-size: 1.8rem;
+    box-shadow: none;
+}
+/* Home */
+#home{
+    padding-top: 13rem;
+    padding-bottom: 6rem;
+    background-color: #1abc9c;
+}
+#home h1{
+    font-size: 4rem;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+}
+#home p{
+    font-size: 1.5rem;
+    font-weight: 300 !important;
+}
+#home img{
+    width: 15rem;
+}
+/* Portfolio */
+#portfolio{
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    /* padding: 6rem 0; */
+    color: #2c3e50;
+}
+#portfolio h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* Portfolio Box */
+#box{
+    position: fixed;
+    top: 30px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background-color: rgba(255, 0, 0, 0.39);
+    z-index: 999999;
+    border-radius: 15px;
+}
+/* Portfolio Child */
+.item{
+    cursor: pointer;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(26, 188, 156, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.item:hover .layer{
+    opacity: 1;
+}
+/* About */
+#about{
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    /* padding: 6rem 0; */
+    color: white;
+    background-color: #1abc9c;
+}
+#about h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Contact */
+#contact{
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    /* padding: 6rem 0; */
+    color: #2c3e50;
+}
+#contact h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* Footer */
+#footer{
+    padding: 5rem 0;
+    background-color: #2c3e50;
+    color: white;
+}
+#footer h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#copyWrite{
+    background-color: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+#copyWrite p{
+    font-size: 12px;
+    margin: 0;
+}
+/* ______________________________________ */
+.line{
+    width: 7rem;
+    height: 0.25rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+}
+.line-white{
+    background-color: white;
+}
+.line-dark{
+    background-color: #2c3e50;
+}
+.input-box{
+    /* position: relative; */
+    border-bottom: 1px solid #e9ecef;
+}
+.input-label{
+    opacity: 0;
+    font-weight: 400;
+    color: #212529;
+}
+.input-me{
+    font-size: 1.5em;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none !important;
+    padding: 0.375rem 0.75rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.help-block{
+    display: none;
+}
+.btm-me{
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    border-radius: 0.5rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn:hover {
+    color: white;
+    background-color: #159a80;
+    border-color: #148f77;
+}
+/* _________Footer__________ */
+
+.btn-social {
+    cursor: pointer;
+    border-radius: 100%;
+    display: inline-flex;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+.btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    transition: all .5s ease;
+}
+.btn-outline-light:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+/* Modal */
+.modal{
+    background-color: rgba(14, 14, 14, 0.5);
+    /* margin: 0; */
+    /* padding: 0; */
+}
+.modal-dialog{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.modal .myBtn{
+    background-color: #1abc9c !important;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.modal .myBtn:hover{
+    background-color: #0ca082 !important;
+    border-color: #0ca082 !important;
+}
+.modal p{
+    text-align: justify;
+}
+@keyframes zoom {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+    /* from {transform: scale(0.1)} 
+    to {transform: scale(1)} */
+  }
+  .modal .arrows{
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      width: 90%;
+      left: 5%;
+      display: flex;
+      justify-content: space-between;
+      color: black;
+      font-size: 3rem;
+      transition: all .5s ease;
+  }
+  .modal .arrows button{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+  .modal .arrows:hover{
+      width: 95%;
+      left: 2.5%;
+  }
+  .modal .btn-close:focus{
+      box-shadow: none;
+  }
